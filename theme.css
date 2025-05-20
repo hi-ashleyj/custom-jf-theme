@@ -1,5 +1,12 @@
   @import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/cyan.css');
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {font-family: 'Quicksand', sans-serif;}
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap'); 
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Comfortaa', sans-serif;
+  }
 
   :root {
     --white: 243, 242, 243;           /* F3F2F3 */
@@ -10,9 +17,9 @@
     --deep-blue: 78, 116, 247;        /* 4E74F7 */
   }
   :root {
-    --rounding: 12px;
-    --rounding-alt: 9px;
-    --rounding-large: 24px;
+    --rounding: 6px;
+    --rounding-alt: 4px;
+    --rounding-large: 8px;
     --rounding-circle: 100px;
   }
 
