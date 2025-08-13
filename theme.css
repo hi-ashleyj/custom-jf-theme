@@ -4,6 +4,15 @@
 @import url('https://cdn.jsdelivr.net/gh/hi-ashleyj/custom-jf-theme@latest/platforms/tablet.css');
 @import url('https://cdn.jsdelivr.net/gh/hi-ashleyj/custom-jf-theme@latest/platforms/tv.css');
 
+body {
+    font-family: var(--font-body);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    text-transform: lowercase;
+}
+
 /*Style backdrop*/
 .backdropImage {
     filter: blur(6px) saturate(120%) contrast(120%) brightness(40%);
@@ -2177,8 +2186,13 @@ progress {
 
 /* margin to Jellyfin logo */
 .pageTitle {
-    display: none;
+    background-image: none;
     margin: 0 0 0 .15em;
+}
+
+.pageTitle::after {
+    content: "jellyfin";
+    font-family: 'Comfortaa', sans-serif;
 }
 
 /* #### Media Player #### */

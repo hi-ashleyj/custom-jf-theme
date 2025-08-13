@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap');
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Comfortaa', sans-serif;
-    text-transform: lowercase;
-}
-
 :root {
+    --font-body: "Roboto", sans-serif;
+    --font-heading: "Comfortaa", sans-serif;
+
     --white: 247, 242, 249; /* #f7f2f9 */
     --white-off: 205, 190, 207; /* #cdbecf */
     --jade-green: 137, 184, 185; /* #89b8b9 */
@@ -29,3 +23,4 @@ h1, h2, h3, h4 {
     --rounding-large: 8px;
     --rounding-circle: 100px;
 }
+
