@@ -3,10 +3,6 @@
 
 ######################################################################################################################*/
 
-.layout-mobile .mainDrawerButton {
-    display: block !important;
-}
-
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
     background: none;
     background-color: rgba(10, 80, 160, 0.75);
@@ -340,6 +336,7 @@
 
 .layout-mobile .mainDrawer {
     width: 315px !important;
+    display: block !important;
 }
 
 .layout-mobile .itemBackdrop {
