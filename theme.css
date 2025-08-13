@@ -477,7 +477,7 @@ a.overview-expand.emby-button {
 
 /* change button hover color */
 .raised:hover, .fab:hover, a[data-role="button"]:hover {
-    background: rgba(var(--accent), 0.95) !important;
+    background: rgba(var(--selected)) !important;
 }
 
 /* hover background in settings */
@@ -1241,7 +1241,7 @@ button-flat:hover {
 .raised:hover,
 .fab:hover,
 a[data-role="button"]:hover {
-    background: rgba(var(--accent), 0.5) !important;
+    background: rgba(var(--selected)) !important;
 }
 
 .subtitleappearance-preview {
@@ -1313,7 +1313,7 @@ progress::-webkit-progress-value {
 .textareaLabelFocused,
 .buttonActive,
 .button-link {
-    color: rgba(var(--accent)) !important;
+    color: rgba(var(--selected)) !important;
 }
 
 #itemDetailPage .button-link {
@@ -1718,7 +1718,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .raised,
 .fab,
 a[data-role="button"] {
-    background: rgba(var(--accent), 0.8) !important;
+    background: rgba(var(--accent)) !important;
+    color: rgba(var(--white), 1);
     transition: all 0.2s !important;
 }
 
