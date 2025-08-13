@@ -13,11 +13,6 @@ h1, h2, h3, h4 {
     text-transform: lowercase;
 }
 
-/*Style backdrop*/
-.backdropImage {
-    filter: blur(6px) saturate(120%) contrast(120%) brightness(40%);
-}
-
 .card.show-animation:focus>.cardBox {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -1566,25 +1561,17 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .mediaSourceIndicator {
-    border-radius: var(--rounding) 0px !important;
+    margin: 4px;
     box-shadow: -1px 1px 5px 1px rgba(var(--darkest), .5);
     background: rgba(var(--accent), 1);
-    color: rgb(var(--darkest));
     left: 0;
     top: 0;
 }
 
 .videoIndicator {
-    border-radius: 0px var(--rounding) !important;
+    margin: 4px;
     box-shadow: -1px 1px 5px 1px rgba(var(--darkest), .5);
     background: rgba(var(--accent), 1);
-    color: rgb(var(--darkest));
-}
-
-.innerCardFooter {
-    /*  border-radius: 0px var(--rounding) !important; */
-    /* conflicts with my edits of the progress bar */
-    /*  box-shadow: 1px 0px 5px 2px rgba(var(--dark),0.5);  */
 }
 
 .cardIndicators {
@@ -1596,7 +1583,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     margin: 4px;
     box-shadow: -1px 1px 5px 1px rgba(var(--darkest), .5);
     background: rgba(var(--accent), 1) !important;
-    color: rgba(var(--darkest), 1) !important;
     font-weight: bold;
     position: absolute;
     right: 0;
@@ -1607,7 +1593,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     box-shadow: 1px 1px 5px 1px rgba(var(--darkest), .5);
     border-radius: var(--rounding) 0px !important;
     background: rgba(var(--accent-off));
-    color: rgba(var(--darkest));
     padding: 0.3em 0.6em;
     position: absolute;
     font-weight: bold;
@@ -1644,7 +1629,12 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .backgroundContainer {
-    background-color: rgba(var(--dark), 0.17) !important;
+    background-color: black;
+    background-image: radial-gradient(circle at 125% 20%, rgba(var(--accent), 0.3), transparent 50%), linear-gradient(160deg, rgba(var(--dark), 0.75), rgba(var(--darkest), 0.65));
+}
+
+.backdropImage {
+    opacity: 0;
 }
 
 .formDialogHeader,
@@ -1942,33 +1932,31 @@ progress {
 
 .itemProgressBar {
     backdrop-filter: blur(4px);
-    background: rgba(var(--white-off), .35) !important;
-    height: 10px;
-    border-radius: 30px;
-}
-
-.layout-mobile .itemProgressBar {
+    background: rgba(var(--dark), .35) !important;
     height: 8px;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 5px var(--dark), .5);
 }
 
 /* don't apply the blur inside Settings > Dashboard as it broke things for some reason */
 #dashboardPage .itemProgressBar {
     backdrop-filter: none;
+    filter: none;
 }
 
 
 
 .itemProgressBarForeground {
     background: rgb(var(--accent));
-    border-radius: var(--rounding-circle);
+    border-radius: 4px;
 
 }
 
 .innerCardFooter {
-    width: calc(100% - 24px);
+    width: calc(100% - 8);
     margin: 0 auto;
     position: absolute;
-    bottom: 12px;
+    bottom: 4;
     box-shadow: 1px 1px 5px rgba(var(--dark), .25);
 }
 
@@ -2180,9 +2168,11 @@ progress {
 .pageTitle {
     background-image: none;
     margin: 0 0 0 .15em;
+    font-family: 'Comfortaa', sans-serif;
+    text-transform: lowercase;
 }
 
-.pageTitle::after {
+.pageTitle:empty::after {
     content: "jellyfin";
     font-family: 'Comfortaa', sans-serif;
 }
@@ -2844,7 +2834,7 @@ fieldset {
 
 #indexPage .homeLibraryButton:hover, .emby-tab-button:hover {
     background-color: rgba(var(--accent), .5) !important;
-    border-radius: var(--rounding-circle) !important;
+    border-radius: var(--rounding) !important;
 }
 
 .raised.homeLibraryButton.emby-button:hover, .emby-tab-button:hover, .homeLibraryButton:focus {
@@ -2858,18 +2848,6 @@ fieldset {
 
 .emby-tab-button-active {
     background-color: rgb(var(--accent)) !important;
-    border-radius: var(--rounding-circle) !important;
-}
-
-
-/* fix for Media (small) cards in home screen */
-#homeTab .homeLibraryButton {
-    background: rgba(var(--accent), .4) !important;
-}
-
-#homeTab .homeLibraryButton:hover {
-    background: rgba(var(--accent), .6) !important;
-    color: rgba(var(--darkest), 1) !important;
     border-radius: var(--rounding) !important;
 }
 
@@ -3006,7 +2984,6 @@ imgLogoIcon {
 /* changes the color of filter indicator */
 .filterIndicator {
     background: rgba(var(--accent));
-    color: rgba(var(--darkest));
     font-size: 80%;
     font-weight: 1000;
     background-image: linear-gradient(rgba(var(--honey-yellow), .55), rgba(var(--honey-yellow), .55));
