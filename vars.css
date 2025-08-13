@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Comfortaa', sans-serif;
+    text-transform: lowercase;
+}
+
+:root {
+    --white: 247, 242, 249; /* #f7f2f9 */
+    --white-off: 205, 190, 207; /* #cdbecf */
+    --jade-green: 137, 184, 185; /* #89b8b9 */
+    --honey-yellow: 218, 174, 71; /* #daae47 */
+    --cherry-red: 222, 110, 100; /* #de6e6e */
+    --deep-blue: 88, 90, 219; /* #585adb */
+
+    --accent: 224, 148, 189; /* #585adb */
+    --accent-off: 189, 109, 152; /* #bd6d98 */
+    --dark: 79, 65, 81; /* #4f4151 */
+    --darkest: 37, 34, 40; /* #252228 */
+    --dark-highlight: 101, 81, 102; /* #655166 */
+    --dark-apparent: 79, 65, 81; /* #4f4151 */
+
+    --rounding: 6px;
+    --rounding-alt: 4px;
+    --rounding-large: 8px;
+    --rounding-circle: 100px;
+}
