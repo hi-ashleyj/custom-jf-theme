@@ -1324,6 +1324,7 @@ progress::-webkit-progress-value {
 /* fix for Media (small) cards in home screen */
 #homeTab .homeLibraryButton {
     background: rgba(var(--accent), .4) !important;
+    color: rgba(var(--white)) !important;
 }
 
 #itemDetailPage .button-link {
@@ -2479,19 +2480,19 @@ div.mainDrawer.transition.touch-menu-la.drawer-open {
 }
 
 .navMenuOption-selected, .selectionCommandsPanel {
-    color: rgba(var(--darkest), 1) !important;
+    color: rgba(var(--white), 1) !important;
     background-color: rgba(var(--accent), 0.55) !important;
     backdrop-filter: blur(4px);
 }
 
 .raised, .fab, a[data-role="button"] {
     background: rgba(var(--accent), 0.75) !important;
-    color: rgba(var(--darkest), 1) !important;
+    color: rgba(var(--white), 1) !important;
 }
 
 div[data-role="controlgroup"] a.ui-btn-active {
     background: rgb(var(--accent)) !important;
-    color: rgba(var(--darkest), 1) !important;
+    color: rgba(var(--white), 1) !important;
 }
 
 /* changes the color of icons in various places such as settings > activity, settings> notifications, subtitle results, etc*/
@@ -2505,7 +2506,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .subtitleList .material-icons.listItemIcon.closed_caption,
 .subtitleResults .material-icons.listItemIcon.closed_caption {
     background: rgba(var(--accent-off), 1) !important;
-    color: rgba(var(--darkest), 1) !important;
+    color: rgba(var(--white), 1) !important;
 }
 
 /* fixes alignment of download and delete icons in edit subtitle screen */
@@ -2825,7 +2826,6 @@ fieldset {
 }
 
 #indexPage .homeLibraryButton, .emby-tab-button {
-    background: transparent !important;
     min-width: 0 !important;
     max-width: 50vw !important;
     width: fit-content !important;
@@ -2845,7 +2845,7 @@ fieldset {
 }
 
 #indexPage .homeLibraryButton:hover, .emby-tab-button:hover {
-    background-color: rgba(var(--accent), .5) !important;
+    background-color: rgba(var(--accent), .7) !important;
     border-radius: var(--rounding) !important;
 }
 
